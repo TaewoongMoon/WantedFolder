@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../styles/fonts/icomoon.eot") format("embedded-opentype"),
+    url("../styles/fonts/icomoon.svg") format("svg"),
+    url("../styles/fonts/icomoon.ttf") format("ttf"),
+    url("../styles/fonts/icomoon.woff") format("woff"),
+    url("../styles/fonts/icomoon.woff2") format("woff2");
+}
