@@ -3,6 +3,9 @@
 ### 과제 내용
 - 원티드GNB(Global Navigation Bar) 구현
 
+### 사용 기술스택
+- Next.js
+
 ### 구현 목록
 
 - 반응형 (구현완료) - 3개의 크기로 구분해서 (MobileSize, MiddleSize, BigSize) 웹 반응형 제작
