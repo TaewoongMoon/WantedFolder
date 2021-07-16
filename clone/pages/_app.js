@@ -1,7 +1,9 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { useMediaQuery } from "react-responsive";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const isMobileSize = useMediaQuery({ maxWidth: 767 });
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
