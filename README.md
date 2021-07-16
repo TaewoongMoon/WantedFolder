@@ -8,7 +8,7 @@
 
 ### 구현 목록
 
-- 반응형 (구현완료) - 3개의 크기로 구분해서 (MobileSize, MiddleSize, BigSize) 웹 반응형 제작
+- 반응형 - 3개의 크기로 구분해서 (MobileSize, MiddleSize, BigSize) 웹 반응형 제작
 - 메뉴 - 원티드 사이트에 있는 리스트들을 직접 하드코딩하여 최대한 비슷하게 제작
 - 메인 컨텐츠 - 메뉴 영역 이외(dim 처리된 부분) 첫번 째 특정 기업의 사진 컨테이너 제외 구현하지 않음
 - 폰트 - 원티드에서 사용한 'icomoon' 폰트를 다운로드하여 css style에 적용 (하지만, 원티드 icomoon style과 본인이 다운받은 icomoon style이 다름. 다운된 폰트 구현에 포커스를 맞춤)
