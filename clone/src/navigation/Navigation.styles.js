@@ -30,9 +30,28 @@ export const GlobalPresentationWithPadding = styled.div`
   max-width: 1060px;
 `;
 
+export const MobileGlobalPresentationWithPadding = styled.div`
+  height: 57px;
+  position: relative;
+  max-width: 1060px;
+  padding-top: 4px;
+`;
+
 export const GlobalNav = styled.nav`
   display: flex;
   height: 50px;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-wrap: wrap;
+`;
+export const MobileGlobalNav = styled.nav`
+  display: flex;
+  height: 57px;
   flex-direction: row;
   -webkit-box-align: center;
   align-items: center;
@@ -80,11 +99,14 @@ export const NavMenu = styled.ul`
   -webkit-box-flex: 1;
   flex: 1;
   justify-content: space-evenly;
-  /* margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px; */
+`;
+
+export const MobileNavMenu = styled.ul`
+  text-align: left;
+  height: inherit;
+  margin: 0;
+  list-style: none;
+  padding: 0;
 `;
 export const NavSingleMenu = styled.li`
   height: inherit;
@@ -94,20 +116,42 @@ export const NavSingleMenu = styled.li`
   text-align: -webkit-match-parent;
 `;
 
+export const MobileNavSingleMenu = styled.li`
+  height: inherit;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: -webkit-match-parent;
+  box-shadow: ${(props) => props.isActive && "inset 0 -5px #258bf7"};
+  padding: 0;
+`;
+
 export const NavSingleMenuDetail = styled.span`
+  position: relative;
+  font-size: ${(props) => (props.isActive ? "13px" : "14px")};
+  line-height: 20px;
+  font-weight: 600;
+  padding: ${(props) => (props.isActive ? "15px 0px" : "15px")};
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+`;
+
+export const MobileNavSingleMenuDetail = styled.span`
   position: relative;
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
-  padding: 15px;
+  padding: 14px 13px 19px 20px;
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 `;
 
 export const NavLastaMenuBetaTag = styled.span`
   position: absolute;
   top: 10px;
-  right: -7px;
+  right: ${(props) => (props.isActive ? "-20px" : "-7px")};
   pointer-events: none;
   font-size: 9px;
   font-weight: 500;
@@ -121,10 +165,11 @@ export const NavAsideMenuWrapper = styled.aside`
   display: block;
 `;
 
-export const NavAsideMenuMidWrapper = styled.ul`
+export const NavAsideMenuMidWrapper = styled.div`
   height: 100%;
   margin: 0;
   list-style: none;
+  border: 0;
 `;
 
 export const NavAsideMenuLogo = styled.li`
@@ -134,6 +179,14 @@ export const NavAsideMenuLogo = styled.li`
   vertical-align: middle;
   width: 43px;
   height: 28px;
+`;
+export const MobileNavAsideMenuLogo = styled.li`
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 43px;
+  height: 23px;
 `;
 export const NavAsideMenuLogoSize = styled.div`
   position: relative;
@@ -293,4 +346,38 @@ export const NavDetailDirectionIcon = styled.i`
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+`;
+
+export const BodyWrapper = styled.div`
+  background: #fff;
+  position: relative;
+  z-index: -1;
+`;
+export const BodyFirstContainer = styled.div`
+  height: 300px;
+  overflow: hidden;
+  background: #f2f2f2;
+  position: relative;
+`;
+
+export const BodyFirstContainerWrapper = styled.div`
+  width: 100%;
+  margin-bottom: 0;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+`;
+
+export const BodyFirstContainerImage = styled.div`
+  background-image: url("https://static.wanted.co.kr/images/banners/1193/2155141a.jpg");
+  position: relative;
+  height: 300px;
+  background-position: 50%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
 `;

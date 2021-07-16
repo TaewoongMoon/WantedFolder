@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { GlobalContext } from "../../pages/_app";
 import NavigationUI from "./Navigation.presenter";
-import { useMediaQuery } from "react-responsive";
 
 const NavigationPage = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [mobileMenuList, setMobileMenuList] = useState("");
   const onMouseOverNavOpen = (event) => {
     if (event.target.id === "탐색") {
       setNavOpen(true);
@@ -12,8 +13,24 @@ const NavigationPage = () => {
     }
   };
 
+  const onMouseOverBodyPage = () => {
+    setNavOpen(false);
+  };
+
+  const onClickMobileMenuList = (event) => {
+    setMobileMenuList(event.target.id);
+  };
+
+  console.log(mobileMenuList);
+
   return (
-    <NavigationUI navOpen={navOpen} onMouseOverNavOpen={onMouseOverNavOpen} />
+    <NavigationUI
+      navOpen={navOpen}
+      onMouseOverBodyPage={onMouseOverBodyPage}
+      onMouseOverNavOpen={onMouseOverNavOpen}
+      onClickMobileMenuList={onClickMobileMenuList}
+      mobileMenuList={mobileMenuList}
+    />
   );
 };
 
