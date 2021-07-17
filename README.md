@@ -19,4 +19,4 @@
 - 전통적인 @media 방법으로도 구현 가능합니다.
 
 
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/65102820/126004761-ecca9922-94c8-408f-b26e-99cb4cefea9c.gif)
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/65102820/126023840-294b1f07-4cd6-4376-b735-0fdc7d7d18ea.gif)
