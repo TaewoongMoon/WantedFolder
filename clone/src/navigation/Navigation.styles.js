@@ -172,6 +172,8 @@ export const NavAsideMenuMidWrapper = styled.div`
   border: 0;
 `;
 
+export const Temp = styled.div``;
+
 export const NavAsideMenuLogo = styled.li`
   position: relative;
   display: inline-block;
